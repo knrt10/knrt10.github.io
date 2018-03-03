@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, height=device-height">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Resume</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var width = $(window).width();
+
+      if(width<480){
+        $("#image").removeClass("image");
+        $("#small-image").removeClass("myclass");
+        $("#image2").removeClass("image2");
+        $("#small-image2").removeClass("myclass");
+        $("#image3").removeClass("image3");
+        $("#small-image3").removeClass("myclass");
+        $("#image4").removeClass("image4");
+        $("#small-image4").removeClass("myclass");
+
+      }
+      if(width>1000){
+        $(window).on("resize", function(event){
+              window.location.reload();
+      });
+      }
+    });
+  </script>
+
+</head>
+<body>
+  <div class="overflowbody">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/" onmousedown="return false">My Profile</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item "  id="top">
+        <a class="nav-link" href="#" onmousedown="return false">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item " [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a  class="nav-link" href="#about" onmousedown="return false">About Me</a>
+      </li>
+      <li class="nav-item "  [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+       <a class="nav-link" href="#skills" onmousedown="return false">Skills</a>
+
+      </li>
+      <li class="nav-item "  [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" href="#projects" onmousedown="return false">Projects</a>
+      </li>
+      <li class="nav-item "  [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+       <a class="nav-link" href="#acadmics" onmousedown="return false">Academic Info</a>
+
+      </li>
+      <li class="nav-item "  [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+       <a class="nav-link" href="#contact" onmousedown="return false">Contact</a>
+
+      </li>
+
+    </ul>
+    <ul class="navbar-nav ">
+
+      <li class="nav-item "  [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" href="#bottom" onmousedown="return false">Bottom</a>
+      </li>
+
+
+    </ul>
+  </div>
+  </nav>
+
+  <div class="container-fluid parallax image img-responsive " id="image">
+
+  </div>
+  <div class="container-fluid myclass" id="small-image">
+    <img src="IMG_2266.JPG" class="img-responsive "  style="height:450px;margin-left:-200px;filter:grayscale(80%)"/>
+   </div>
+  <div class="container-fluid" style="z-index:4;">
+    <div class="row">
+      <div class="col-xs-12 col-md-2"></div>
+      <div class="col-xs-12 col-md-8 ">
+        <br><br><br>
+        <h2 style="color:grey;" class="text-center" id="about">ABOUT ME</h2>
+        <hr>
+
+        <p style="font-style:italic;color:grey;font-size:20px;">I am Kautilya Tripathi and am currently pursuing Bachelor of Engineering in Computer Science from International Institute of Information Technology, Bhubaneswar.
+           I am self taught <span style="font-weight:30px;color:red;">Web and Android Developer</span> with 2 years of experience. My love for web development started with HTML and CSS.
+            Once I understood the language I started to build some advanced CSS projects and took a dive into bootstrap.
+             I learned JavaScript, which helped me to understand the concept of web pages.
+              After that I started learning Jquery and BackEnd Development. I did several projects in FreeCodeCamp and earned FrontEnd Developer Certifate
+              <a href="https://www.freecodecamp.org/knrt10/front-end-certification">(Here is the link)</a>. I also worked on variours BackEnd projects in FreeCodeCamp. Along with that I also did projects which combined both FrontEnd and BackEnd development. You can find below the list of projects I have done so far.
+              Recently I started combining my knowledge of Web development in Android Applications and made one successfully. Looking forward to made some more interesting Apps in future.
+       </p>
+       <hr>
+      </div>
+    </div>
+
+    <br><br/><br/>
+    <div class="row">
+      <div class="col-xs-12 col-md-2"></div>
+      <div class="col-xs-12 col-md-8">
+         <span style="font-size:22px;letter-spacing:10px;"> Kautilya</span>
+         <br/><br/>
+         <img src="knrt.jpg" class="img-responsive" style="height:450px"/>
+         <br/><br/><br/>
+      </div>
+    </div>
+
+    <div class="row well">
+      <div class="col-xs-12 col-md-2"></div>
+      <div class="col-xs-12 col-md-8">
+        <h1 style="font-style:italic;color:grey;" id="skills">My skills</h1>
+        <div class="jumbotron" style="letter-spacing:10px;font-size:42px;font-style:italic">
+          BackEnd
+        </div>
+        <p style="letter-spacing:10px;font-size:22px;">NodeJs</p>
+        <div class="progress">
+          <div class="progress-bar" style="background-color:grey;width:70%;border-radius:0px;height:40px;"></div>
+        </div><br>
+        <p style="letter-spacing:10px;font-size:22px;">Go(Learning)</p>
+        <div class="progress">
+          <div class="progress-bar" style="background-color:grey;width:10%;border-radius:0px;height:40px;"></div>
+        </div>
+        <br>
+        <p style="letter-spacing:10px;font-size:22px;">PHP</p>
+        <div class="progress">
+          <div class="progress-bar" style="background-color:grey;width:50%;border-radius:0px;height:40px;"></div>
+        </div>
+
+        <br>
+        <div class="jumbotron" style="letter-spacing:10px;font-size:42px;font-style:italic">
+          FrontEnd
+        </div>
+        <p style="letter-spacing:10px;font-size:22px;">JavaScript</p>
+        <div class="progress">
+          <div class="progress-bar" style="background-color:grey;width:80%;border-radius:0px;height:40px;"></div>
+        </div>
+        <p style="letter-spacing:10px;font-size:22px;">HTML</p>
+        <div class="progress">
+          <div class="progress-bar" style="background-color:grey;width:80%;border-radius:0px;height:40px;"></div>
+        </div>
+        <p style="letter-spacing:10px;font-size:22px;">CSS</p>
+        <div class="progress">
+          <div class="progress-bar" style="background-color:grey;width:80%;border-radius:0px;height:40px;"></div>
+        </div>
+
+        <br>
+        <div class="jumbotron" style="letter-spacing:10px;font-size:42px;font-style:italic">
+          Framework & Plugins
+        </div>
+        <p style="letter-spacing:10px;font-size:22px;">Ionic</p>
+        <div class="progress">
+          <div class="progress-bar" style="background-color:grey;width:80%;border-radius:0px;height:40px;"></div>
+        </div>
+
+        <p style="letter-spacing:10px;font-size:22px;">Jquery</p>
+        <div class="progress">
+          <div class="progress-bar" style="background-color:grey;width:70%;border-radius:0px;height:40px;"></div>
+        </div>
+        <p style="letter-spacing:10px;font-size:22px;">Angular</p>
+        <div class="progress">
+          <div class="progress-bar" style="background-color:grey;width:80%;border-radius:0px;height:40px;"></div>
+        </div>
+        <p style="letter-spacing:10px;font-size:22px;">ReactJs</p>
+        <div class="progress">
+          <div class="progress-bar" style="background-color:grey;width:50%;border-radius:0px;height:40px;"></div>
+        </div>
+
+
+        <div class="jumbotron" style="letter-spacing:10px;font-size:42px;font-style:italic">
+          Database
+        </div>
+
+        <p style="letter-spacing:10px;font-size:22px;">MongoDB</p>
+        <div class="progress">
+          <div class="progress-bar" style="background-color:grey;width:70%;border-radius:0px;height:40px;"></div>
+        </div>
+        <p style="letter-spacing:10px;font-size:22px;">MySQL</p>
+        <div class="progress">
+          <div class="progress-bar" style="background-color:grey;width:70%;border-radius:0px;height:40px;"></div>
+        </div>
+
+        <div class="jumbotron" style="letter-spacing:8px;font-size:40px;font-style:italic">
+          Programming Languages
+        </div>
+
+        <p style="letter-spacing:10px;font-size:22px;">C</p>
+        <div class="progress">
+          <div class="progress-bar" style="background-color:grey;width:30%;border-radius:0px;height:40px;"></div>
+        </div>
+        <p style="letter-spacing:10px;font-size:22px;">C++</p>
+        <div class="progress">
+          <div class="progress-bar" style="background-color:grey;width:30%;border-radius:0px;height:40px;"></div>
+        </div>
+
+
+      </div>
+    </div>
+
+<br><br>
+
+    <div class="row" id="d">
+
+      <div class="col-md-3 col-xs-12">
+
+      </div>
+
+          <div class="col-md-3 col-xs-12">
+              <div class="d">
+              10+<br/> Projects Done
+
+              </div>
+          </div>
+
+          <div class="col-md-3 col-xs-12">
+             <div class="d">
+              1<br/>Ceritificate
+
+              </div>
+
+          </div>
+
+
+      </div>
+
+
+      <div class="row image2 parallax img-responsive" id="image2">
+
+      </div>
+      <div class="container-fluid myclass" id="small-image2">
+        <img src="para6.jpeg" class="img-responsive"  style="height:450px;margin-left:-300px;filter:grayscale(80%)"/>
+       </div>
+
+  <br><br>
+      <div class="row">
+        <div class="col-xs-12 col-md-2"></div>
+        <div class="col-xs-12 col-md-8 text-center">
+          <h3 id="projects">MY WORK</h3>
+            <br/>
+          <p style="font-size:22px;">Projects
+        <hr>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-warning mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">Android</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Leave-Manager Android App for IIIT-Bhubaneswar </h4>
+                <p class="card-text text-center"><a href="https://github.com/knrt10/LeaveMangerAndoirdApp-IIITBBSR" target="_blank">View App</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-success mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">Nodejs / Angular</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Leave Manager for IIIT-BBSR(Cross Platform App) </h4>
+                <p class="card-text text-center"><a href="https://github.com/knrt10/IIIT-Cross-Platform-Leave-Manager" target="_blank">Click to view code</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-success mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">Nodejs / Angular</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Build a Blog App </h4>
+                <p class="card-text text-center"><a href="https://peaceful-headland-88470.herokuapp.com/" target="_blank">Click to view</a></p>
+              </div>
+              <br>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-danger mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">(HTML/CSS)</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Build a Tribute Page </h4>
+                <p class="card-text text-center"><a href="https://codepen.io/Knrt/full/vgvrRJ" target="_blank">Click to view</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-info mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">JavaScript</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Random Quote Generator</h4>
+                <p class="card-text text-center"><a href="https://codepen.io/Knrt/full/GraRJW" target="_blank">Click to view</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-info mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">JavaScript</h3>
+              <div class="card-body ">
+                <h4 class="card-title">WikiPedia Search Engine</h4>
+                <p class="card-text text-center"><a href="https://codepen.io/Knrt/full/KaLxep" target="_blank">Click to view</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-info mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">JavaScript</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Calculator</h4>
+                <p class="card-text text-center"><a href="https://codepen.io/Knrt/full/JEQOYV" target="_blank">Click to view</a>
+                <br><br></p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-info mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">JavaScript</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Pomodoro Clock</h4>
+                <p class="card-text text-center"><a href="https://codepen.io/Knrt/full/YNoJKj" target="_blank">Click to view</a>
+                <br><br></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-success mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">NodeJs</h3>
+              <div class="card-body ">
+                <h4 class="card-title">TimeStamp MicroService</h4>
+                <p class="card-text text-center"><a href="https://github.com/knrt10/timestamp" target="_blank">Click to view code</view></a>
+                <br></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-success mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">NodeJs</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Request Header Parser MicroService</h4>
+                <p class="card-text text-center"><a href="https://github.com/knrt10/HeaderParser" target="_blank">Click to view code</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-success mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">NodeJs</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Url Shortner</h4>
+                <p class="card-text text-center"><a href="https://github.com/knrt10/UrlShortner" target="_blank">Click to view code</a></p>
+              </div>
+              <br><br>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-success mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">NodeJs</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Image Search Abstraction Layer</h4>
+                <p class="card-text text-center"><a href="https://github.com/knrt10/image-search-abstraction-layer" target="_blank">Click to view code</a></p>
+              </div>
+              <br>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-success mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">NodeJs</h3>
+              <div class="card-body ">
+                <h4 class="card-title">File MetaData Miroservice</h4>
+                <p class="card-text text-center"><a href="https://github.com/knrt10/file-metadata-microservice" target="_blank">Click to view code</a></p>
+              </div>
+              <br>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-success mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">NodeJs</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Voting App</h4>
+                <p class="card-text text-center"><a href="https://github.com/knrt10/Voting-Application" target="_blank">Click to view code</a>
+                <br><br></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-primary mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">NodeJs / Angular</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Gif Search App</h4>
+                <p class="card-text text-center"><a href="https://github.com/knrt10/gifsearch" style="color:white;" target="_blank">Click to view code</a></p>
+              </div>
+              <br>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-primary mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">NodeJs / Angular</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Reddit Type voting APP</h4>
+                <p class="card-text text-center"><a href="https://github.com/knrt10/reddit-type-voting-app" style="color:white;" target="_blank">Click to view code</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-primary mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">NodeJs / Angular</h3>
+              <div class="card-body ">
+                <h4 class="card-title">NightLife Co-ordination App</h4>
+                <p class="card-text text-center"><a href="https://github.com/knrt10/fcc-nightcoordination/tree/master/nightlife" style="color:white;" target="_blank">Click to view code</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-info mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">JavaScript</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Bouncing Balls Game</h4>
+                <p class="card-text text-center"><a href="https://knrt10.github.io/BouncingBallsJS/" style="color:white;" target="_blank">Click to view</a>
+                <br><br></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="card text-white bg-success mb-3 " style="max-width: 20rem;">
+              <h3 class="card-header">NodeJs / Socket.IO</h3>
+              <div class="card-body ">
+                <h4 class="card-title">Chat App</h4>
+                <p class="card-text text-center"><a href="https://github.com/knrt10/chat-app-with-form-validation" style="color:white;" target="_blank">Click to view code</a>
+                </p>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="image3 row parallax img-responsive" id="image3">
+
+        </div>
+        <div class="container-fluid myclass" id="small-image3">
+          <img src="landing-stage-sea-sky-night.jpeg" class="img-responsive"  style="height:450px;margin-left:-300px;filter:grayscale(80%)"/>
+         </div>
+        <br><br>
+        <div class="row">
+          <div class="col-xs-12 col-md-2"></div>
+          <div class="col-xs-12 col-md-8 text-center" id="acadmics" style="font-size:32px;font-weight:bold;font-style:italic;letter-spacing:12px;">Education <hr></div>
+
+        </div>
+        <div class="row" >
+          <div class="col-xs-12 col-md-2"></div>
+          <div class="col-xs-12 col-md-8">
+            <h1 style="color:grey;">HighSchool:- </h1>
+
+            <p style="font-size:22px;font-style:italic;font-color:grey"> Kundan Vidya Mandir(Ludhiana,Punjab ,India) ---(89.3%)</p>
+
+            <h1 style="color:grey">Intermediate</h1>
+            <p style="font-size:22px;font-style:italic;font-color:grey"> Delhi Public School(Haridwar,Uttrakhand ,India) ---(88.2%)</p>
+            <h1 style="color:grey">Undergraduate (anticipated july 2020)</h1>
+            <p style="font-size:22px;font-style:italic;font-color:grey"> International Institute of Information Technology(Bhubaneswar,Odisha ,India)</p>
+            <p style="font-size:22px;font-style:italic;font-color:grey">Bachelor of Engineering in Computer Science</p>
+
+          </div>
+        </div>
+          <br><br>
+        <div class="row image4 parallax img-responsive " id="image4">
+
+        </div>
+        <div class="container-fluid myclass" id="small-image4">
+          <img src="para15.jpg" class="img-responsive"  style="height:450px;margin-left:-300px;filter:grayscale(80%)"/>
+         </div>
+
+
+        <br><br>
+        <div class="row">
+          <div class="col-xs-12 col-md-2"></div>
+          <div class="col-xs-12 col-md-8 text-center" id="contact" style="font-size:32px;font-weight:bold;font-style:italic;letter-spacing:12px;">Contact<hr></div>
+
+        </div>
+        <div class="row" >
+          <div class="col-xs-12 col-md-2"></div>
+          <div class="col-xs-12 col-md-8">
+            <h1 style="color:grey;">Email : </h1>
+            <p style="font-size:20px;font-style:italic;">tripathi.kautilya@gmail.com</p>
+            <h1 style="color:grey">Mobile : </h1>
+            <p style="font-size:20px;font-style:italic;">+91-7906387146</p>
+            <a  class="btn btn-md btn-success" href="https://github.com/knrt10" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/kautilya-tripathi-35853713b/" target="_blank" class="btn btn-md btn-danger">Linked In</a>
+            <a href="https://www.freecodecamp.org/knrt10" target="_blank" class="btn btn-md btn-info">FreeCodeCamp</a>
+
+          </div>
+        </div>
+         <br/><br/><br/><br/><br/><br/>
+
+        <div class="row" id="bottom">
+          <div class="col-xs-12 col-md-12">
+            <div class="fotter text-center" style="background-color:#454545;height:270px;margin-top:-50px;" >
+                  <br><br><br>
+                <a class="btn btn-primary btn-lg " href="#top" style="margin-left:0px;margin-top:30px;border:0px;border-radius:0px;">Top</a>
+
+            </div>
+          </div>
+        </div>
+
+  </div>
+  </div>
+</body>
+</html>
