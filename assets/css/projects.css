@@ -27,6 +27,15 @@
   color: black;
 }
 
+.body-apps-info-true {
+  top:50px;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-color: #ABEBC6;
+  color: black;
+}
+
 .page-section {
   color: white
 }

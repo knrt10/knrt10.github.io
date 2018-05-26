@@ -2,7 +2,7 @@
 title: probot-repos
 description: Probot extension for events that return undefined
 logo:
-- https://user-images.githubusercontent.com/24803604/40576469-b92c2b30-6114-11e8-87cf-eb435b2a50db.jpeg
+- https://user-images.githubusercontent.com/24803604/40577428-0acee99c-6123-11e8-92cc-8e8efcbcfae8.jpg
 
 authors:
 - knrt10

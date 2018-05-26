@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% if page.previews %}
+{% assign preview = true %}
 <div class="container-fluid explore-app">
   <div class="row">
     <div class="col-xs-12 col-md-3"></div>
@@ -16,15 +17,27 @@ layout: default
     </div>
   </div>
 </div>
-{% endif %}
 
 <div class="container body-apps-info">
   <div class="row">
-    <div class="col-xs-12 col-md-12">
-      <h1>Information</h1>
+    <div class="col-xs-12 col-md-12 text-center">
+      <h1 style="font-weight:bold;">information</h1>
     </div>
   </div>
 </div>
+
+{% endif %}
+
+{% unless preview%}
+<div class="container body-apps-info-true">
+  <div class="row">
+    <div class="col-xs-12 col-md-12 text-center">
+      <h1 style="font-weight:bold;">information</h1>
+    </div>
+  </div>
+</div>
+<br><br>
+{%endunless%}
 
 <div class="container body-apps">
   <div class="row">
