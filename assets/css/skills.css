@@ -5,6 +5,114 @@
     padding-top: 100px;
     padding-bottom: 100px;
     background-image: linear-gradient(135deg, #1A0B7D 0%, #4D4FE9 50%, #2CD4D9 100%);
-    text-align: center;
     color: #fff;
+}
+
+
+.container .progress {
+  margin: 0 auto;
+  width: auto;
+  height: 20px;
+}
+
+.progress {
+  padding: 2px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  height: 16px;
+  border-radius: 4px;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+
+#five:checked ~ .progress > .progress-bar {
+  width: 5%;
+  background-color: #f63a0f;
+}
+
+
+#twentyfive:checked ~ .progress > .progress-bar {
+  width: 25%;
+  background-color: #f27011;
+}
+
+#fifty:checked ~ .progress > .progress-bar {
+  width: 50%;
+  background-color: #f2b01e;
+}
+
+#fifty1:checked ~ .progress > .progress-bar {
+  width: 51%;
+  background-color: #f2b01e;
+}
+
+#fifty2:checked ~ .progress > .progress-bar {
+  width: 51%;
+  background-color: #f2b01e;
+}
+
+#seventy2:checked ~ .progress > .progress-bar {
+  width: 72%;
+  background-color: #dbf21b;
+}
+
+#seventy3:checked ~ .progress > .progress-bar {
+  width: 73%;
+  background-color: #f2e11b;
+}
+
+#seventyfive:checked ~ .progress > .progress-bar {
+  width: 75%;
+  background-color: #f2d31b;
+}
+
+#seventysix:checked ~ .progress > .progress-bar {
+  width: 76%;
+  background-color: #f2d31b;
+}
+
+#seventyseven:checked ~ .progress > .progress-bar {
+  width: 77%;
+  background-color: #f2d31b;
+}
+
+#eighty:checked ~ .progress > .progress-bar {
+  width: 80%;
+  background-color: #f2d31b;
+}
+
+#eighty5:checked ~ .progress > .progress-bar {
+  width: 85%;
+  background-color: #7be01e;
+}
+
+#onehundred:checked ~ .progress > .progress-bar {
+  width: 90%;
+  background-color: #86e01e;
+}
+
+.radio {
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  margin: 0 5px 20px;
+  padding: 3px 8px;
+  color: #aaa;
+  text-shadow: 0 1px black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.radio:checked + .label {
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
 }
