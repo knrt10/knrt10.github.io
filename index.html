@@ -3,13 +3,13 @@ layout: default
 ---
 
 <div class="landing">
-  <div class="top mainHeader___F5Byq">
-    <blockquote>
+  <div class=" mainHeader___F5Byq">
+    <blockquote class="top">
       Hi :wave:  this is <em>Kautilya Tripathi</em>. {{site.description}}
     </blockquote>
   </div>
   <div class="back">
-    
+
   </div>
 </div>
 
@@ -21,7 +21,7 @@ layout: default
     </p>
     <div class="d-md-flex flex-wrap gutter flex-auto">
       {% assign apps = site.apps %}
-        {% for app in apps limit:2 %}
+        {% for app in apps limit:4 %}
           {% include app.html app=app %}
         {% endfor %}
     </div>

@@ -29,6 +29,10 @@
     background-image: radial-gradient(94.92% 96.5%,#1c77be 0,#265bcc 44.47%,#4324ae 100%);
 }
 
+.top {
+  font-size: 20px !important;
+}
+
 @media only screen and (min-width: 480px) {
   .back {
       min-height: 760px;
