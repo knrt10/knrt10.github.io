@@ -1,0 +1,38 @@
+.back {
+  width:100%;
+  position: relative;
+  background-image: url(../images/home_hero.svg) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  min-height: 290px;
+  -moz-appearace:none;
+    -webkit-appearace:none;
+    appearace:none;
+}
+
+.mainHeader___F5Byq {
+    text-align: center;
+    margin: 0 auto;
+}
+.mainHeader___F5Byq {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    max-width: 75%;
+}
+
+.landing {
+    padding-top: 75px;
+    z-index: -1;
+    background-image: radial-gradient(94.92% 96.5%,#1c77be 0,#265bcc 44.47%,#4324ae 100%);
+}
+
+@media only screen and (min-width: 480px) {
+  .back {
+      min-height: 760px;
+      background-size: auto;
+    }
+
+}

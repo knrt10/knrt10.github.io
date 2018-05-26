@@ -1,0 +1,44 @@
+title: HomePage
+email: tripathi.kautilya@gmail.com
+description: We are a bunch of undergrads who like to dabble into all things in computer science from
+             web dev to machine learning and from distributed systems to blockchain,
+             helping others along the way in kick-starting their journey of becoming a developer.
+
+permalink: pretty
+github_url: https://github.com/knrt10
+sourceUrl: https://github.com/knrt10/knrt10.github.io
+medium_url: https://medium.com/@knrt
+linkedIn_url: https://www.linkedin.com/in/kautilya-tripathi-35853713b/
+twitter_url: https://twitter.com/knrt19
+
+exclude:
+  - Gemfile*
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - node_modules
+  - script
+  - vendor
+
+markdown: kramdown
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-octicons
+  - jekyll-readme-index
+  - jemoji
+
+collections:
+  apps:
+    output: true
+    permalink: /apps/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: apps
+    values:
+      layout: app
+
+branch: master

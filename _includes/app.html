@@ -1,0 +1,24 @@
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+  <div class="card brown lighten-5  z-depth-5 hoverable" style="overflow: visible;">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator img-fluid" src="{{app.logo}}" style="height:200px;">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">{{app.title}}<a class="btn-floating pulse right blue"><i class="material-icons">more_vert</i></a></span>
+    </div>
+    <div class="card-reveal" style="display: none; transform: translateY(0%);">
+      <span class="card-title grey-text text-darken-4 text-center">{{app.repository}}<a class="btn-floating pulse right red"><i class="material-icons">close</i></a></span>
+      <br><blockquote class="text-center card-panel">{{app.description}}</blockquote>
+      <div class="row text-center">
+        <div class="col-xs-12 col-md-12">
+          <a  href="{{app.githubUrl}}" target="_blank" class="btn-floating btn-md waves-effect waves-light contri-github"><p class="text-center">{% octicon mark-github %}</p></a>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-xs-12 col-md-12">
+          <a href="{{app.url}}" class="waves-effect waves-light z-depth-5 color-btn btn btn-lg">LEARN MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

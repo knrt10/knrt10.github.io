@@ -1,0 +1,95 @@
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 40px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.inherit {
+  background-color: transparent !important;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutFromTop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.colorChangeBottom {
+  animation: 0.5s ease-out 0s 1 slideOutFromTop;
+  animation-fill-mode: forwards;
+}
+
+.colorChangeTop {
+  animation: 0.5s ease-out 0s 1 slideInFromTop;
+  animation-fill-mode: forwards;
+}
+
+.navbar:hover {
+  background-color: #14171a;
+  width: 100%;
+}
+
+.brand-logo {
+  color: white !important;
+}
+
+.brand-logo:hover {
+  color: rgb(237, 17, 92) !important;
+  text-decoration: none;
+}

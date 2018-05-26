@@ -1,0 +1,65 @@
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">About Me</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<nav class="fixed-top z-depth-0 inherit" id="navbar">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="nav-wrapper">
+          <span><a href="/"  class="brand-logo"><img src="../../favicon.ico" class="img-fluid" alt="logo"> Portfolio</a></span>
+          <ul id="nav-mobile" class="right">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<script>
+  function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+  }
+
+  function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+  }
+
+  var app = document.getElementById('appTop')
+  var nav = document.getElementById('navbar')
+
+  var last_known_scroll_position = 0;
+  var ticking = false;
+  function doSomething(scroll_pos) {
+    if(scroll_pos<300){
+      nav.classList.remove("z-depth-5")
+      nav.classList.remove("colorChangeTop")
+      nav.classList.add("z-depth-0")
+      nav.classList.remove("indigo")
+    } else if(scroll_pos>300){
+      nav.classList.add("z-depth-5")
+      nav.classList.add("indigo")
+      nav.classList.add("lighten-6")
+      nav.classList.remove("z-depth-0")
+      nav.classList.add("colorChangeTop")
+    }
+  }
+
+  window.addEventListener('scroll', function(e) {
+    last_known_scroll_position = window.scrollY;
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        doSomething(last_known_scroll_position);
+        ticking = false;
+      })
+      ticking = true;
+    }
+  })
+</script>
