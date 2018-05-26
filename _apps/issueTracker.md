@@ -9,7 +9,7 @@ authors:
 stars: 5
 
 
-repository: knrt10/IssueTracker
+repository: IssueTracker
 githubUrl: https://github.com/knrt10/IssueTracker
 ---
 # Issue Tracker

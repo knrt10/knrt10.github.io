@@ -12,7 +12,7 @@ authors:
 stars: 63
 
 
-repository: p-society/p-society.github.io
+repository: p-society.github.io
 githubUrl: https://github.com/p-society/p-society.github.io
 ---
 

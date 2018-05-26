@@ -8,7 +8,7 @@ previews:
 authors:
 - knrt10
 stars: 9
-repository: knrt10/cloudinary-cli
+repository: cloudinary-cli
 githubUrl: https://github.com/knrt10/cloudinary-cli
 ---
 
@@ -94,4 +94,4 @@ Options:
 - `cloudTool d <public_id>`
 
 **Multiple files**
-- `cloudTool d -a <public_id1> <public_id3> <public_id3> ...
+- `cloudTool d -a <public_id1> <public_id3> <public_id3> ...`

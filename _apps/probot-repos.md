@@ -9,7 +9,7 @@ authors:
 stars: 6
 
 
-repository: knrt10/probot-repos
+repository: probot-repos
 githubUrl: https://github.com/knrt10/probot-repos
 ---
 

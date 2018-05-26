@@ -4,13 +4,12 @@ description: Learn how to touch type from the comfort of your terminal and chall
 logo:
 - https://raw.githubusercontent.com/p-society/artwork/master/gifs/typeracer.gif
 previews:
-  - https://user-images.githubusercontent.com/24803604/40576469-b92c2b30-6114-11e8-87cf-eb435b2a50db.jpeg
   - https://user-images.githubusercontent.com/24803604/39970250-e3d22eca-5705-11e8-9c89-472ff4d982ea.gif
   - https://user-images.githubusercontent.com/24803604/39970260-f63d6bc4-5705-11e8-8d94-b2f984f8c998.gif
 authors:
 - knrt10
-stars: 63
-repository: p-society/typeracer-cli
+stars: 67
+repository: typeracer-cli
 githubUrl: https://github.com/p-society/typeracer-cli
 ---
 

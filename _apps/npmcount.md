@@ -9,7 +9,7 @@ previews:
 authors:
 - knrt10
 stars: 3
-repository: knrt10/npm-downloads-count-cli
+repository: npm-downloads-count-cli
 githubUrl: https://github.com/knrt10/npm-downloads-count-cli/
 ---
 

@@ -9,7 +9,7 @@ previews:
 authors:
 - knrt10
 stars: 2
-repository: knrt10/LeaveMangerAndoirdApp-IIITBBSR
+repository: LeaveMangerAndoirdApp-IIITBBSR
 githubUrl: https://github.com/knrt10/LeaveMangerAndoirdApp-IIITBBSR
 ---
 
