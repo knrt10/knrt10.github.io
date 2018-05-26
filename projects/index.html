@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="contributor">
+  <div class="container-lg"></div>
+  <h2 class="text-center" style="font-weight:bold">All Projects</h2>
+  <blockquote class="lead text-center col-md-7 col-sm-10 mx-auto">
+    These are all my projects so far, some are very basic but it always start from 1.
+  </blockquote><br>
+  <div class="d-md-flex flex-wrap gutter flex-auto">
+    {% assign projects = site.apps %}
+    {% for app in projects %}
+      {% include app.html app=app %}
+    {% endfor %}
+  </div>
+</div>

@@ -1,3 +1,5 @@
+{% if page.url == '/' %}{% assign homepage = true %}{% endif %}
+
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
@@ -7,6 +9,22 @@
     <a href="#">Contact</a>
   </div>
 </div>
+{% unless homepage %}
+  <nav class="fixed-top z-depth-0 blue " id="navbar">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="nav-wrapper">
+            <span><a href="/"  class="brand-logo"><img src="../../favicon.ico" class="img-fluid" alt="logo"> Portfolio</a></span>
+            <ul id="nav-mobile" class="right">
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+{%endunless%}
 <nav class="fixed-top z-depth-0 inherit" id="navbar">
   <div class="container">
     <div class="row">
@@ -38,13 +56,17 @@
   var last_known_scroll_position = 0;
   var ticking = false;
   function doSomething(scroll_pos) {
-    if(scroll_pos<300){
+    if(scroll_pos<150){
       nav.classList.remove("z-depth-5")
       nav.classList.remove("colorChangeTop")
       nav.classList.add("z-depth-0")
       nav.classList.remove("indigo")
-    } else if(scroll_pos>300){
+      {% unless homepage %}
+      nav.classList.add("blue")
+      {%endunless%}
+    } else if(scroll_pos>150){
       nav.classList.add("z-depth-5")
+      nav.classList.remove("blue")
       nav.classList.add("indigo")
       nav.classList.add("lighten-6")
       nav.classList.remove("z-depth-0")
