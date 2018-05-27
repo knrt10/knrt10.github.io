@@ -132,11 +132,20 @@ layout: default
       <i class="material-icons" style="font-size:30px;">developer_mode</i>
     </h1>
   </span>
-  <h1 class="text-center">Education</h1>
+  <h1 class="text-center">Academic Education</h1>
   <div class="container">
     <div class="d-md-flex flex-wrap gutter flex-auto">
         {% for app in site.education limit:3 %}
           {% include education.html app=app %}
+        {% endfor %}
+    </div>
+  </div><br>
+
+  <h1 class="text-center">Online Education</h1>
+  <div class="container">
+    <div class="d-md-flex flex-wrap gutter flex-auto offset-md-2">
+        {% for app in site.online limit:3 %}
+          {% include onlineEducation.html app=app %}
         {% endfor %}
     </div>
   </div>
