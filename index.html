@@ -19,7 +19,7 @@ layout: default
     <p class="text-center col-md-7 col-sm-10 mx-auto" style="font-size:1.4em;">
       Check out these apps made by me that can help developers in great way. They're all open source and free to use on any project.
     </p>
-    <div class="d-md-flex flex-wrap gutter flex-auto">
+    <div class="d-md-flex flex-wrap gutter flex-auto ">
       {% assign apps = site.apps %}
         {% for app in apps limit:6 %}
           {% include app.html app=app %}
@@ -28,7 +28,7 @@ layout: default
     <br>
     <div class="text-center">
     <a href="/projects/">
-      <button class="btn btn-outline btn-large waves-effect waves-light">
+      <button class="btn btn-outline btn-large waves-effect waves-light ">
         {% octicon telescope class:"mr-2" %}
         Explore all projects
       </button>
@@ -38,6 +38,7 @@ layout: default
 </div>
 
 <div class="skills" id="skills">
+  <h1 style="text-align: center;">Programming Skills</h1>
   <span style="text-align: center;">
     <h1>
       <i class="material-icons" style="font-size:30px;">developer_board</i>
@@ -45,7 +46,6 @@ layout: default
       <i class="material-icons" style="font-size:30px;">developer_mode</i>
     </h1>
   </span>
-  <h1 style="text-align: center;">My skills</h1>
 
   <div class="container" >
     <div class="row">
@@ -149,4 +149,8 @@ layout: default
         {% endfor %}
     </div>
   </div>
+</div>
+
+<div class="contact" id="contact">
+
 </div>
