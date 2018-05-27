@@ -51,14 +51,15 @@ layout: default
     <div class="row">
       <div class="col">
         <h1 style="text-align: center;">Backend</h1>
-        <input type="radio" class="radio" name="progress" value="seventyfive" id="seventyfive" checked>
-        <label for="seventyfive" class="label" style="color:white;font-size:2em">Nodejs</label>
 
-        <input type="radio" class="radio" name="progress" value="fifty" id="fifty">
-        <label for="fifty" class="label" style="color:white;font-size:2em">PHP</label>
+          <input type="radio" class="radio" name="group1" value="seventyfive" id="seventyfive" checked>
+          <label for="seventyfive" class="label" style="color:white;font-size:2em">Nodejs</label>
 
-        <input type="radio" class="radio" name="progress" value="five" id="five">
-        <label for="five" class="label" style="color:white;font-size:2em">Go</label>
+          <input type="radio" class="radio" name="group1" value="fifty" id="fifty">
+          <label for="fifty" class="label" style="color:white;font-size:2em">PHP</label>
+
+          <input type="radio" class="radio" name="group1" value="five" id="five">
+          <label for="five" class="label" style="color:white;font-size:2em">Go</label>
 
         <div class="progress">
           <div class="progress-bar"></div>
@@ -68,14 +69,15 @@ layout: default
     <div class="row">
       <div class="col">
         <h1 style="text-align: center;">Frontend</h1>
-        <input type="radio" class="radio" name="progress" value="onehundred" id="onehundred">
-        <label for="onehundred" class="label" style="color:white;font-size:2em">Javascript</label>
 
-        <input type="radio" class="radio" name="progress" value="seventyfive" id="seventyseven">
-        <label for="seventyseven" class="label" style="color:white;font-size:2em">HTML</label>
+          <input type="radio" class="radio" name="group2" value="onehundred" id="onehundred" checked>
+          <label for="onehundred" class="label" style="color:white;font-size:2em">Javascript</label>
 
-        <input type="radio" class="radio" name="progress" value="seventyfive" id="seventysix">
-        <label for="seventysix" class="label" style="color:white;font-size:2em">CSS</label>
+          <input type="radio" class="radio" name="group2" value="seventyfive" id="seventyseven">
+          <label for="seventyseven" class="label" style="color:white;font-size:2em">HTML</label>
+
+          <input type="radio" class="radio" name="group2" value="seventyfive" id="seventysix">
+          <label for="seventysix" class="label" style="color:white;font-size:2em">CSS</label>
 
         <div class="progress">
           <div class="progress-bar"></div>
@@ -85,17 +87,19 @@ layout: default
     <div class="row">
       <div class="col">
         <h1 style="text-align: center;">Frameworks & Plugins</h1>
-        <input type="radio" class="radio" name="progress" value="fifty" id="fifty1">
-        <label for="fifty1" class="label" style="color:white;font-size:2em">Ionic</label>
 
-        <input type="radio" class="radio" name="progress" value="seventy3" id="seventy3">
-        <label for="seventy3" class="label" style="color:white;font-size:2em">Jquery</label>
+          <input type="radio" class="radio" name="group3" value="fifty" id="fifty1" checked>
+          <label for="fifty1" class="label" style="color:white;font-size:2em">Ionic</label>
 
-        <input type="radio" class="radio" name="progress" value="seventy2" id="seventy2">
-        <label for="seventy2" class="label" style="color:white;font-size:2em">Angular</label>
+          <input type="radio" class="radio" name="group3" value="seventy3" id="seventy3">
+          <label for="seventy3" class="label" style="color:white;font-size:2em">Jquery</label>
 
-        <input type="radio" class="radio" name="progress" value="twentyfive" id="twentyfive">
-        <label for="twentyfive" class="label" style="color:white;font-size:2em">ReactJs</label>
+          <input type="radio" class="radio" name="group3" value="seventy2" id="seventy2">
+          <label for="seventy2" class="label" style="color:white;font-size:2em">Angular</label>
+
+          <input type="radio" class="radio" name="group3" value="twentyfive" id="twentyfive">
+          <label for="twentyfive" class="label" style="color:white;font-size:2em">ReactJs</label>
+
 
         <div class="progress">
           <div class="progress-bar"></div>
@@ -105,11 +109,12 @@ layout: default
     <div class="row">
       <div class="col">
         <h1 style="text-align: center;">Database</h1>
-        <input type="radio" class="radio" name="progress" value="eighty5" id="eighty5">
-        <label for="eighty5" class="label" style="color:white;font-size:2em">MongoDB</label>
 
-        <input type="radio" class="radio" name="progress" value="fifty2" id="fifty2">
-        <label for="fifty2" class="label" style="color:white;font-size:2em">MySql</label>
+          <input type="radio" class="radio" name="group4" value="eighty5" id="eighty5" checked>
+          <label for="eighty5" class="label" style="color:white;font-size:2em">MongoDB</label>
+
+          <input type="radio" class="radio" name="group4" value="fifty2" id="fifty2">
+          <label for="fifty2" class="label" style="color:white;font-size:2em">MySql</label>
 
         <div class="progress">
           <div class="progress-bar"></div>
@@ -117,6 +122,22 @@ layout: default
       </div>
     </div>
   </div>
+</div>
 
-
+<div class="education">
+  <span class="text-center">
+    <h1>
+      <i class="material-icons" style="font-size:30px;">book</i>
+      <i class="material-icons" style="font-size:30px;">assignment</i>
+      <i class="material-icons" style="font-size:30px;">developer_mode</i>
+    </h1>
+  </span>
+  <h1 class="text-center">Education</h1>
+  <div class="container">
+    <div class="d-md-flex flex-wrap gutter flex-auto">
+        {% for app in site.education limit:3 %}
+          {% include education.html app=app %}
+        {% endfor %}
+    </div>
+  </div>
 </div>

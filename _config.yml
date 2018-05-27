@@ -40,6 +40,8 @@ collections:
   apps:
     output: true
     permalink: /apps/:name/
+  education:
+    output: true
 
 defaults:
   - scope:
@@ -47,5 +49,10 @@ defaults:
       type: apps
     values:
       layout: app
+  - scope:
+      path: ""
+      type: education
+    values:
+      layout: default
 
 branch: master

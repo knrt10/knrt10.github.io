@@ -1,7 +1,7 @@
 
 .skills {
     position: relative;
-    min-width: 100%;
+    height: 1000px;
     padding-top: 100px;
     padding-bottom: 100px;
     background-image: linear-gradient(135deg, #1A0B7D 0%, #4D4FE9 50%, #2CD4D9 100%);

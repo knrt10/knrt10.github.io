@@ -1,0 +1,10 @@
+.education {
+  background: linear-gradient(180deg,rgba(167,176,252,.15),hsla(0,0%,100%,0)),#f7f9ff;
+  position: relative;;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-width: 100%;
+  height: auto;
+  color: #2E3280;
+  width: 50%;
+}
