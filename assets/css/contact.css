@@ -1,3 +1,16 @@
 .contact {
-  background-color: #ecf2ff;
+  background-image: linear-gradient(135deg, #1A0B7D 0%, #4D4FE9 50%, #2CD4D9 100%);
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: auto;
+  color: #fff;
+}
+.github-contact {
+  color: rgba(238, 238, 238, 4.8) !important;
+  font-weight: bold;
+}
+
+.github-contact:hover {
+  color: rgb(121, 213, 199) !important;
 }
