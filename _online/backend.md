@@ -6,6 +6,6 @@ description: |
 purpose: FreeCodeCamp
 
 logo:
-- http://res.cloudinary.com/dsyvg5xwi/image/upload/v1520767429/cert1_vjbxaq.png
+- https://res.cloudinary.com/dsyvg5xwi/image/upload/v1520767429/cert1_vjbxaq.png
 
 ---
