@@ -17,7 +17,7 @@ sourceUrl: https://github.com/knrt10/knrt10.github.io
 medium_url: https://medium.com/@knrt
 linkedIn_url: https://www.linkedin.com/in/kautilya-tripathi-35853713b/
 twitter_url: https://twitter.com/knrt19
-freecodecamp_url: http://freecodecamp.org/knrt10
+freecodecamp_url: https://www.freecodecamp.org/portfolio/knrt10
 
 exclude:
   - Gemfile*
