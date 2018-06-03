@@ -7,7 +7,6 @@ logo:
 
 authors:
 - knrt10
-stars: 5
 
 
 repository: fcc-nightcoordination

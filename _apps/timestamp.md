@@ -6,7 +6,6 @@ logo:
 
 authors:
 - knrt10
-stars: 5
 
 previews: 
  - https://user-images.githubusercontent.com/24803604/40872946-d6d42ae8-6646-11e8-9799-f9be221e1305.png

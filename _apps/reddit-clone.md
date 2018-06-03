@@ -6,8 +6,6 @@ logo:
 
 authors:
 - knrt10
-stars: 5
-
 
 repository: reddit-type-voting-app
 githubUrl: https://github.com/knrt10/reddit-type-voting-app

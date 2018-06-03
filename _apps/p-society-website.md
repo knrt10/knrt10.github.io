@@ -9,8 +9,6 @@ previews:
 
 authors:
 - knrt10
-stars: 63
-
 
 repository: p-society.github.io
 githubUrl: https://github.com/p-society/p-society.github.io

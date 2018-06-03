@@ -8,8 +8,6 @@ logo:
 authors:
 - knrt10
 
-
-
 repository: Voting-Application
 githubUrl: https://github.com/knrt10/Voting-Application
 ---

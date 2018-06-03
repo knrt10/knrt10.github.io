@@ -6,7 +6,6 @@ logo:
 
 authors:
 - knrt10
-stars: 2
 
 repository: fcc-Pintrest-Clone
 githubUrl: https://github.com/knrt10/fcc-Pintrest-Clone

@@ -6,7 +6,6 @@ logo:
 
 authors:
 - knrt10
-stars: 6
 
 
 repository: probot-repos
