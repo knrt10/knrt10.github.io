@@ -1,10 +1,15 @@
 .contact {
-  background-image: linear-gradient(135deg, #1A0B7D 0%, #4D4FE9 50%, #2CD4D9 100%);
   width: 100%;
   padding-top: 100px;
   padding-bottom: 100px;
   height: auto;
   color: #fff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+26,45484d+34,000000+100 */
+background: #45484d; /* Old browsers */
+background: -moz-linear-gradient(top, #45484d 26%, #45484d 34%, #000000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #45484d 26%,#45484d 34%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #45484d 26%,#45484d 34%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 .github-contact {
   color: rgba(238, 238, 238, 4.8) !important;
@@ -13,4 +18,13 @@
 
 .github-contact:hover {
   color: rgb(121, 213, 199) !important;
+}
+
+/*
+  Thank you page
+*/
+
+.thankyou:hover {
+  background-color: transparent !important;
+  color: teal;
 }

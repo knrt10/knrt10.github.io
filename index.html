@@ -163,17 +163,34 @@ layout: default
   <br><br>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-4 col-xs-4">
-        <span style="font-size:1.7em"><i class="material-icons" style="color:yellow">email</i><br>{{site.email}}</span>
-      </div>
-      <div class="col-xs-12 col-md-4 col-xs-4">
-        <span style="font-size:1.7em"><i class="material-icons" style="color:black">phone</i><br> +91-7906387146</span>
-        <span style="font-size:1.7em"><br> +91-9871265535</span>
-      </div>
-      <div class="col-xs-12 col-md-4 col-xs-4">
-          <span style="font-size:1.7em">:computer:</span>
-        <span style="font-size:1.7em"><br><a href="{{site.linkedIn_url}}" class="github-contact">linkedin</a></span>
-        <span style="font-size:1.7em"><br><a href="{{site.twitter_url}}" class="github-contact">twitter</a></span>
+      <div class="col-xs-12 col-md-8 col-xs-8 offset-md-2">
+          <form class="col s12" method="POST" action="https://formcarry.com/s/Hk8firWxQ" accept-charset="UTF-8" style="padding: 20px;background:transparent;">
+            <h2 class="text-center">Get in Touch</h2>
+            <br>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">person</i>
+                <input id="name" type="text" class="validate" name="name" required aria-required="true" placeholder="Please enter your name e.g.: John Doe">
+                <label for="name" style="color:#2E3280;">Your Name <span style="color:red;">*</span></label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">email</i>
+                <input id="email" type="email" name="email" class="validate" placeholder="example@example.com" required aria-required=”true” pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}">
+                <label for="email" style="color:#2E3280;">Your Email <span style="color:red;">*</span></label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="textarea1" class="validate materialize-textarea" name="message" style="width:auto" placeholder="Enter your message" required aria-required=”true”></textarea>
+                <label for="textarea1" style="color:#2E3280;">Your Message <span style="color:red;">*</span></label>
+              </div>
+            </div>
+            <button class="btn waves-effect waves-light cyan" type="submit">Send
+            </button>
+          </form>
       </div>
     </div>
   </div>
