@@ -1,7 +1,7 @@
 ---
 title: IIIT Bhubaneswar
 description: |
-  I and am currently pursuing **Bachelor of Engineering in Computer Science** from *International Institute of Information Technology, Bhubaneswar* and is anticipated to complete it by *2020*
+  I am currently pursuing **Bachelor of Engineering in Computer Science** from *International Institute of Information Technology, Bhubaneswar* and is anticipated to complete it by *2020*
 purpose: UNDERGRADUATE
 
 logo:
