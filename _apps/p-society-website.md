@@ -1,5 +1,5 @@
 ---
-title: p-society(Website)
+title: PSOC(Website)
 description: Official website for Programming society of IIIT-BBSR
 logo:
 - https://user-images.githubusercontent.com/24803604/40577428-0acee99c-6123-11e8-92cc-8e8efcbcfae8.jpg

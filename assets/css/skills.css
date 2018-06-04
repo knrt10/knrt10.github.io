@@ -68,6 +68,11 @@
   background-color: #f2e11b;
 }
 
+#seventy4:checked ~ .progress > .progress-bar {
+  width: 74%;
+  background-color: #f2e11b;
+}
+
 #seventyfive:checked ~ .progress > .progress-bar {
   width: 75%;
   background-color: #f2d31b;
