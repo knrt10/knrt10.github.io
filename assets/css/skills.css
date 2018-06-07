@@ -54,7 +54,12 @@
 }
 
 #fifty2:checked ~ .progress > .progress-bar {
-  width: 51%;
+  width: 52%;
+  background-color: #f2b01e;
+}
+
+#fifty3:checked ~ .progress > .progress-bar {
+  width: 53%;
   background-color: #f2b01e;
 }
 
