@@ -29,7 +29,7 @@
   overflow: hidden;
   height:600px;
   position:relative;
-  top:290px;
+  top:297px;
 }
 
 .svg-footer {
@@ -55,6 +55,7 @@
 .foot-list-item-anchor {
   color: rgba(238, 238, 238, 4.8);
   font-weight: bold;
+  margin: 0 15px 5px 0;
 }
 
 .foot-list {
@@ -118,6 +119,6 @@
     }
 
   .header-footer {
-    top:70px;
+    top:77px;
   }
 }
