@@ -1,15 +1,7 @@
-title: HomePage
+title: "Knrt10's Area"
 email: tripathi.kautilya@gmail.com
-description: I am currently pursuing Bachelor of Engineering in Computer Science
-             from International Institute of Information Technology, Bhubaneswar. I am self taught Web and
-             Android Developer with 2 years of experience. My love for web development started with HTML
-             and CSS. Once I understood the language I started to build some advanced CSS projects and took a
-             dive into bootstrap. I learned JavaScript, which helped me to understand the concept of web pages.
-             After that I started learning Jquery and BackEnd Development. I did several projects in FreeCodeCamp
-             and earned FrontEnd & Backend Developer Certificates. Along with that I also did projects which
-             combined both FrontEnd and BackEnd development. You can find below the list of projects I have done so far.
-             I started combining my knowledge of Web development in Android Applications and made one successfully.
-             I am in love with golang right now and working to make cool awesome applications.
+description: He is currently pursuing Bachelor of Engineering in Computer Science
+             from International Institute of Information Technology, Bhubaneswar, a college which did not support him in any way. He is a Backend developer and an open source lover :heart:. He has learnt most of his developing skills either while working on his open source project or contributing to open source organizations project on Github. He has a wide online presence except Facebook or it's subsideries. He is currently in love with Golang and making free software in that area. 
 
 permalink: pretty
 github_url: https://github.com/knrt10
@@ -30,6 +22,8 @@ exclude:
   - vendor
 
 markdown: kramdown
+
+highlighter: rouge
 
 plugins:
   - jekyll-redirect-from
