@@ -10,6 +10,11 @@ medium_url: https://medium.com/@knrt
 linkedIn_url: https://www.linkedin.com/in/kautilya-tripathi-35853713b/
 twitter_url: https://twitter.com/knrt19
 freecodecamp_url: https://www.freecodecamp.org/portfolio/knrt10
+url: "https://knrt10.github.io"
+
+share:
+  twitter_username: knrt19
+  fb_appid: 1749788565247320
 
 exclude:
   - Gemfile*
