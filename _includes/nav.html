@@ -3,12 +3,11 @@
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a href="/">Home</a>
-    <a href="{{site.medium_url}}">Blog</a>
-    <a href="/#project">Projects</a>
-    <a href="{{site.resume_url}}" target="_blank">Resume</a>
-    <a href="/#skills">About Me</a>
-    <a href="/#contact">Contact</a>
+    <a href="/" >Home</a>
+    <a href="{{site.medium_url}}" target="_blank" onclick="closeNav()">Blog</a>
+    <a href="/#project" onclick="closeNav()">Projects</a>
+    <a href="{{site.resume_url}}" target="_blank" onclick="closeNav()">Resume</a>
+    <a href="/#contact" onclick="closeNav()">Contact</a>
   </div>
 </div>
 {% unless homepage %}
